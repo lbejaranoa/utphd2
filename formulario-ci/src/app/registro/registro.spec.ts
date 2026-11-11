@@ -37,4 +37,9 @@ it('Debe rechazar contraseña de menos de 6 caracteres',()=>{
   expect(password.valid).toBe(false);
 });
   
+it('Debe rechazar contraseña de menos de 6 caracteres',()=>{
+  const password=component.formulario.controls.password;
+  password.setValue('123456789');
+  expect(password.valid).toBe(false);
+});
 });
