@@ -14,7 +14,7 @@ export class Registro {
     this.formulario=this.fb.group({
       nombre:['',Validators.required],
       email:['',[Validators.required,Validators.email]],
-      password:['',[Validators.required,Validators.minLength(6)]]
+      password:['',[Validators.required,Validators.minLength(2)]]
     });
   }
 
